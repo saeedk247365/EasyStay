@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atlantis</title>
+  <title>EasyStay</title>
   <meta name="description" content="Free Bootstrap Theme by uicookies.com">
   <meta name="keywords"
     content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
@@ -19,10 +19,52 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+    @media screen and (max-width: 410px) {
+      .desktop{
+        display: none;
+      }
+      .mobile{
+        display: block;
+      }
+    }
+    @media screen and (min-width: 410px) {
+      .mobile{
+        display: none;
+      }
+      .desktop{
+        display: block;
+      }
+    }
+
+    </style>
 </head>
 
 <body>
 
+  <script>
+  
+//     // <li id="banner-image-list-item" style="background-image: url(img/9room.jpeg); width: 100%; height: auto;" class="overlay">
+//     // Function to handle screen width changes
+// function handleScreenWidthChange() {
+//     // Get the current screen width
+//     var screenWidth = window.innerWidth;
+
+//     // Log the screen width to the console
+//     console.log("Screen width changed to: " + screenWidth);
+//     if(screenWidth < 480){
+//       document.getElementById('banner-image-list-item').style = "background-image: url(img/9room.jpeg); width: 100%; height: auto;"
+//     } else {
+//       document.getElementById('banner-image-list-item').style = "background-image: url(img/Home.png); width: 100%; height: auto;"
+//     }
+// }
+
+// // Add event listener for screen width changes
+// window.addEventListener("resize", handleScreenWidthChange);
+
+
+    </script>
   <!-- START: header -->
 
   <header role="banner" class="probootstrap-header">
@@ -31,7 +73,7 @@
       <a href="#" class="probootstrap-burger-menu visible-xs"><i></i></a>
       <div class="mobile-menu-overlay"></div>
 
-      <a href="index.html" class="probootstrap-logo visible-xs"><img src="img/logo_sm.png" class="hires" width="120"
+      <a href="index.html" class="probootstrap-logo visible-xs"><img src="img/logo.png" class="hires" width="120"
           height="33" alt="Free Bootstrap Template by uicookies.com"></a>
 
       <nav role="navigation" class="probootstrap-nav hidden-xs">
@@ -39,7 +81,7 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/rooms">Our Rooms</a></li>
-          <li class="hidden-xs probootstrap-logo-center"><a href="/"><img src="img/logo_md.png" class="hires"
+          <li class="hidden-xs probootstrap-logo-center"><a href="/"><img src="img/logo.png" class="hires"
                 width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
           <li><a href="/reservation">Reservation</a></li>
           <li><a href="/blog">Blog</a></li>
@@ -61,10 +103,9 @@
   </header>
   <!-- END: header -->
 
-  <section class="probootstrap-slider flexslider">
-    <ul class="slides">
-      <li style="background-image: url(img/8room.jpeg);width: 100%;
-      height: auto;" class="overlay">
+  <section class="probootstrap-slider flexslider desktop">
+    <ul class="slides" >
+      <li style="background-image: url(img/desktop/img1.png);width: 100%;" class="overlay">
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -74,7 +115,130 @@
           </div>
         </div>
       </li>
-      <li style="background-image: url(img/9room.jpeg); width: 100%; height: auto;" class="overlay">
+      <li id="banner-image-list-item" style="background-image: url(img/desktop/img2.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/desktop/img3.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/desktop/img4.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/desktop/img5.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/desktop/img6.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </section>
+
+  <section class="probootstrap-slider flexslider mobile">
+    <ul class="slides" >
+      <li style="background-image: url(img/mobile/img1.png);width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/mobile/img2.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/mobile/img3.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/mobile/img4.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/mobile/img5.png); width: 100%;" class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="probootstrap-slider-text text-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li id="banner-image-list-item" style="background-image: url(img/mobile/img6.png); width: 100%;" class="overlay">
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
