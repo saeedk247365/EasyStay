@@ -3,7 +3,18 @@
   <section class="probootstrap-section">
     <div class="container">
       <div class="row probootstrap-gutter60">
-        <div class="col-md-8">
+
+        <div class="col-md-4">
+          <h2 class="mt0">Contact with us </h2>
+          <ul class="probootstrap-contact-info">
+
+            <li><i class="icon-phone2"></i><span><a style="color: #7e8890;" href="tel: +92 340 8068401">+92 340 8068401</a></span></li>
+            <li><i ><img style="width: 18px; margin-top: -6px;" src="img/whatsapp_icon.png" alt=""></i><span><a style="color: #7e8890;" href="tel: +92 340 8068401">+92 340 8068401</a></span></li>
+
+          </ul>
+
+        </div>
+        <div class="col-md-8" id="contact_form">
           <h2 class="mt0">Contact Form</h2>
           <form action="#" method="post" class="probootstrap-form">
             <div class="row">
@@ -37,19 +48,6 @@
             </div>
           </form>
         </div>
-        <div class="col-md-4">
-          <h2 class="mt0">Get In Touch</h2>
-          <ul class="probootstrap-contact-info">
-            <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-            <li><i class="icon-mail"></i><span>info@domain.com</span></li>
-            <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
-          </ul>
-          <h2>Feedback</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-            blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-            ocean.</p>
-          <p><a href="#" class="btn btn-primary" role="button">Send Message</a></p>
-        </div>
       </div>
     </div>
   </section>
@@ -79,12 +77,19 @@
   <%- include('footer.ejs') %>
 
 
+    <script>
+      $(document).ready(function () {
+        // Handler for .ready() called.
+        $('html, body').animate({
+          scrollTop: $('#contact_form').offset().top
+        }, 'slow');
+      });
+    </script>
 
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
 
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
+    </body>
 
-</body>
-
-</html>
+    </html>

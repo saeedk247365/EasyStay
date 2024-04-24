@@ -238,42 +238,6 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get all "Reserve now" buttons
-      const reserveButtons = document.querySelectorAll('.btn-primary');
-
-      // Function to add additional buttons
-      function addMoreButtons(event) {
-        // Prevent the default action of the button (e.g., form submission)
-        event.preventDefault();
-
-        // Get the parent element of the clicked button
-        const parent = event.target.closest('.probootstrap-room');
-
-        // Create two additional buttons
-        const button1 = document.createElement('button');
-        button1.textContent = 'Additional Button 1';
-        button1.classList.add('btn', 'btn-secondary', 'mr-2');
-
-        const button2 = document.createElement('button');
-        button2.textContent = 'Additional Button 2';
-        button2.classList.add('btn', 'btn-secondary');
-
-        // Append the buttons to the parent element
-        parent.appendChild(button1);
-        parent.appendChild(button2);
-
-        // Remove the event listener from the clicked button
-        event.target.removeEventListener('click', addMoreButtons);
-      }
-
-      // Add click event listeners to all "Reserve now" buttons
-      reserveButtons.forEach(button => {
-        button.addEventListener('click', addMoreButtons);
-      });
-    });
-  </script>
 
 </body>
 
