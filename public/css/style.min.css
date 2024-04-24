@@ -608,7 +608,7 @@
  .btn {
      border: none;
      border-radius: 4px;
-     padding: 8px 15px
+     padding: 17px 35px
  }
  
  .btn:active {
@@ -832,7 +832,7 @@
      .probootstrap-cta .probootstrap-cta-button-wrap,
      .probootstrap-cta .probootstrap-cta-heading {
          width: 100%;
-         text-align: left
+         text-align: center
      }
  }
  
